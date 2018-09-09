@@ -1,9 +1,9 @@
 # INSTRUCTIONS FOR UCSC 
 
 ## Requirements
-* user Pyton 3.6.6
-* for mac users if matplotlib is troubling [Check this link](https://matplotlib.org/faq/osx_framework.html#osxframework-faq)
-  - put `backend : macosx` in  ~./.matplotlib/matplotlibrc for matplotlib to work
+* user python 3.6.6 or 3.5.*
+* for mac users if matplotlib is giving trouble [Check this link](https://matplotlib.org/faq/osx_framework.html#osxframework-faq)
+  - If there is no visible plot add `backend : macosx` to  **~./.matplotlib/matplotlibrc**
 
 ## Usage 
 * Build project `pip install -e <package-location>`
