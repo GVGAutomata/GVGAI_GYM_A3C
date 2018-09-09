@@ -3,13 +3,17 @@
 ## Requirements
 * user Pyton 3.6.6
 * for mac users if matplotlib is troubling [Check this link](https://matplotlib.org/faq/osx_framework.html#osxframework-faq)
-* * put `backend : macosx` in  ~./.matplotlib/matplotlibrc for matplotlib to work
+  - put `backend : macosx` in  ~./.matplotlib/matplotlibrc for matplotlib to work
 
-## To start ruuning 
+## Usage 
 * Build project `pip install -e <package-location>`
 * Install any missing libraries with pip
 * Run agent `python RunMe.py`
 
+## References
+* [Simple Reinforcement Learning with Tensorflow Part 8: Asynchronous Actor-Critic Agents (A3C)](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-8-asynchronous-actor-critic-agents-a3c-c88f72a5e9f2)
+
+___
 
 # GVGAI GYM
 
@@ -32,72 +36,6 @@ Run the following line to get a list of all GVGAI environments.
 ```Python
 [env.id for env in gym.envs.registry.all() if env.id.startswith('gvgai')]
 ```
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/rubenrtorrado/GVGAI_GYM.
-
-## License
-
-This code is available as open source under the terms of the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
-
-# GVGAI Single-Player Competition @CIG18
-
-The 2nd GVGAI Single-Player Competition will be organised at [the IEEE’s 2018 Conference on Computational Intelligence and Games (CIG18)](https://project.dke.maastrichtuniversity.nl/cig2018/?page_id=255).
-
-**Important notice: A new GVGAI-Gym will be used in this competition from last year. The competition rules have been changed.**
-
-## Rules
-Due to the long training time, the GVGAI server won’t be used for training your agent. Please train your agent using your own machine or server.
-
-### Preparation
-
-Download and set up the new GVGAI-Gym framework on your machine/server.
-
-Demo video on [YouTube](https://youtu.be/O84KgRt6AJI)
-
-### Training Phase (NOW - 3 July 2018)
-
-Program your agent and train it 
-- on as many games/levels as you want;
-- using as much time as you want for deciding an action per game tick;
-- using as much time as you want for training.
-
-### Validation Phase (4 - 29 July 2018)
-
-- On 4 July 2018, we will release 3 games (G1, G2 and G3) and 2 levels each for training. Unknown levels of the same 3 games will be used for validation. 
-- Train your agent on the given levels of given games using as much time as you want.
-
-**The released game are named as:**
-- testgame1
-- testgame2
-- testgame3
-
-### Submission
-
-- Zip your trained agent.
-- Submit your agent to the competition. 
-- Submission will be opened from 4 July 2018 and closed at 29 July 2018 23:59 (GMT).
-
-*Remark: no feedback will be given until the bug report phase will start.*
-
-### Bug Report Phase 
-
-- Submission will be closed at 29 July 2018 23:59 (GMT).
-- You will be contacted if we have problems running your agent on our server.
-
-### Validation Phase
-
-Your agent will play the same games (G1, G2 and G3) that we have released for training, multiple times, but on private levels.
-At this phase, your agent should return a legal action in **no more than 100ms per game tick**.
-
-## Timeline
-
-- Release games for competition: ~~2 July 2018~~ Released on 4 July 2018
-- Submission deadline: ~~22 July 2018 23:59 (GMT)~~ 29 July 2018 23:59 (GMT)
-- Testing on server: ~~23-27 July 2018 23:59 (GMT)~~ 30 July-3 August 2018 23:59 (GMT)
-- Starting validation on server: ~~28 July 2018~~ 4 August 2018
-- Announcement of results: during the CIG18
 
 ## Resources
 
