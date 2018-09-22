@@ -7,8 +7,20 @@ import matplotlib.animation as animation
 from A3CAgent.A3CAgent import A3CAgent
 #plt.style.use('dark_background')
 
-games = ["gvgai-aliens","gvgai-angelsdemons","gvgai-assemblyline","gvgai-avoidgeorge","gvgai-bait","gvgai-beltmanager","gvgai-blacksmoke","gvgai-boloadventures","gvgai-bomber","gvgai-bomberman"] # add 10 games
-# games = ["gvgai-aliens","gvgai-angelsdemons"] # add 10 games
+games = [
+    'gvgai-labyrinthdual', 'gvgai-labyrinth',
+    'gvgai-lasers2', 'gvgai-lasers', 'gvgai-lemmings', 'gvgai-mirrors', 'gvgai-missilecommand', 'gvgai-modality',
+    'gvgai-overload', 'gvgai-pacman', 'gvgai-painter', 'gvgai-plants', 'gvgai-plaqueattack', 'gvgai-pokemon', 'gvgai-portals',
+    'gvgai-racebet2', 'gvgai-racebet', 'gvgai-realportals', 'gvgai-realsokoban', 'gvgai-rivers', 'gvgai-roadfighter', 'gvgai-roguelike',
+    'gvgai-run', 'gvgai-seaquest', 'gvgai-sheriff', 'gvgai-shipwreck', 'gvgai-sistersavior', 'gvgai-sokoban', 'gvgai-solarfox',
+    'gvgai-superman', 'gvgai-surround', 'gvgai-survivezombies', 'gvgai-tercio', 'gvgai-testgame1', 'gvgai-testgame2', 'gvgai-testgame3',
+    'gvgai-thecitadel', 'gvgai-themole', 'gvgai-theshepherd', 'gvgai-thesnowman', 'gvgai-vortex', 'gvgai-waferthinmintsexit',
+    'gvgai-waferthinmints', 'gvgai-waitforbreakfast', 'gvgai-watergame', 'gvgai-waves', 'gvgai-whackamole', 'gvgai-wildgunman',
+    'gvgai-witnessprotected', 'gvgai-witnessprotection', 'gvgai-wrapsokoban', 'gvgai-x-racer', 'gvgai-zelda', 'gvgai-zenpuzzle'] # add 10 games
+#performs good on : "gvgai-aliens","gvgai-boulderchase","gvgai-brainman",
+#   "gvgai-defem","gvgai-donkeykong",'gvgai-ikaruga','gvgai-invest',
+#do not add(crash) : 'gvgai-ghostbuster','gvgai-killBillVol1',
+
 
 
 results_file = open("results.txt", "w")
@@ -58,7 +70,8 @@ for game in games:
         
         for j in range (1000):
             
-            env.render()
+            print("tick "+str(sso.gameTick))
+            #env.render()
 
             sso.gameTick += 1
             # print("Training : Running "+game+" lvl :"+str(i)+" Tick :"+str(sso.gameTick)+" Score :"+str(sso.gameScore))
@@ -80,6 +93,7 @@ for game in games:
                 print("Training : level "+str(i)+" Score : "+str(sso.gameScore))
                 #close render window
                 env.close()
+                break
             if done:
                 if reward != -1:
                     sso.gameWinner = "Player"
@@ -123,7 +137,8 @@ for game in games:
 
         for j in range (1000):
             
-            env.render()
+            print("tick "+str(sso.gameTick))
+            # env.render()
 
             sso.gameTick += 1
             #print("Training : Running "+game+" lvl :"+str(next_level)+" Tick :"+str(sso.gameTick)+" Score :"+str(sso.gameScore))
@@ -144,7 +159,8 @@ for game in games:
                 elapsed_timer = time.time() - training_start_time
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
-                env.close()
+                # env.close()
+                break
             if done:
                 if reward != -1:
                     sso.gameWinner = "Player"
@@ -153,14 +169,14 @@ for game in games:
                 elapsed_timer = time.time() - training_start_time
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
-                env.close()
+                # env.close()
                 break
             if elapsed_timer > training_time_limit:
                 print("Training : level "+str(next_level)+" Score : "+str(sso.gameScore))
                 next_level = Agent.result(sso, elapsed_timer)
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
-                env.close()
+                # env.close()
                 break
 
     #run level 3,4 for validation
@@ -184,7 +200,8 @@ for game in games:
 
         for j in range (1000):
             
-            env.render()
+            print("tick "+str(sso.gameTick))
+            # env.render()
 
             sso.gameTick += 1
             #print("Evaluvation : Running "+game+" lvl :"+str(i)+" Tick :"+str(sso.gameTick)+" Score :"+str(sso.gameScore))
@@ -205,6 +222,7 @@ for game in games:
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
                 env.close()
+                break
             if done:
                 if reward != -1:
                     sso.gameWinner = "Player"
@@ -212,14 +230,14 @@ for game in games:
                 next_level = Agent.result(sso, elapsed_timer)
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
-                env.close()
+                # env.close()
                 break
             if elapsed_timer > evaluvating_time_limit:
                 print("Training : level "+str(i)+" Score : "+str(sso.gameScore))
                 next_level = Agent.result(sso, elapsed_timer)
                 results_file.write(str(sso.gameScore)+"\n")
                 #close render window
-                env.close()
+                # env.close()
                 break
 
     

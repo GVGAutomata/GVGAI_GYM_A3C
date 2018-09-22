@@ -1,3 +1,160 @@
-Playing game gvgai-aliens
-Training : level 0 Score : 8.0
-Training : level 1 Score : 
+Playing game gvgai-labyrinthdual
+Training : level 0 Score : -1.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 2.0
+Evaluation : level 3 Score : -1.0
+Evaluation : level 4 Score : -1.0
+Playing game gvgai-labyrinth
+Training : level 0 Score : -1.0
+Training : level 1 Score : -1.0
+Training : level 2 Score : -1.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : -1.0
+Playing game gvgai-lasers2
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-lasers
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-lemmings
+Training : level 0 Score : -13.0
+Training : level 1 Score : -6.0
+Training : level 2 Score : -13.0
+Evaluation : level 3 Score : -24.0
+Evaluation : level 4 Score : -29.0
+Playing game gvgai-mirrors
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 1.0
+Playing game gvgai-missilecommand
+Training : level 0 Score : -1.0
+Training : level 1 Score : 3.0
+Training : level 2 Score : -3.0
+Evaluation : level 3 Score : -2.0
+Evaluation : level 4 Score : -4.0
+Playing game gvgai-modality
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-overload
+Training : level 0 Score : 2.0
+Training : level 1 Score : 3.0
+Training : level 2 Score : 14.0
+Evaluation : level 3 Score : 5.0
+Evaluation : level 4 Score : 8.0
+Playing game gvgai-pacman
+Training : level 0 Score : 6.0
+Training : level 1 Score : 3.0
+Training : level 2 Score : 6.0
+Evaluation : level 3 Score : 4.0
+Evaluation : level 4 Score : 3.0
+Playing game gvgai-painter
+Training : level 0 Score : 272.0
+Training : level 1 Score : 351.0
+Training : level 2 Score : 274.0
+Evaluation : level 3 Score : 240.0
+Evaluation : level 4 Score : 14.0
+Playing game gvgai-plants
+Training : level 0 Score : 13.0
+Training : level 1 Score : 7.0
+Training : level 2 Score : 10.0
+Evaluation : level 3 Score : 7.0
+Evaluation : level 4 Score : 7.0
+Playing game gvgai-plaqueattack
+Training : level 0 Score : -11.0
+Training : level 1 Score : -3.0
+Training : level 2 Score : 9.0
+Evaluation : level 3 Score : -5.0
+Evaluation : level 4 Score : -12.0
+Playing game gvgai-pokemon
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-portals
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-racebet2
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-racebet
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-realportals
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 1.0
+Evaluation : level 4 Score : 1.0
+Playing game gvgai-realsokoban
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 2.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-rivers
+Training : level 0 Score : 0.0
+Training : level 1 Score : 1.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-roadfighter
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-roguelike
+Training : level 0 Score : 2.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 1.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-run
+Training : level 0 Score : 0.0
+Training : level 1 Score : 0.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : 0.0
+Evaluation : level 4 Score : 0.0
+Playing game gvgai-seaquest
+Training : level 0 Score : 0.0
+Training : level 1 Score : 5.0
+Training : level 2 Score : 1007.0
+Evaluation : level 3 Score : 1.0
+Evaluation : level 4 Score : 2015.0
+Playing game gvgai-sheriff
+Training : level 0 Score : 3.0
+Training : level 1 Score : -1.0
+Training : level 2 Score : 0.0
+Evaluation : level 3 Score : -1.0
+Evaluation : level 4 Score : 1.0
+Playing game gvgai-shipwreck
+Training : level 0 Score : -10.0
+Training : level 1 Score : -10.0
+Training : level 2 Score : -10.0
+Evaluation : level 3 Score : -10.0
+Evaluation : level 4 Score : -10.0
+Playing game gvgai-sistersavior
+Training : level 0 Score : 4.0
+Training : level 1 Score : 4.0
+Training : level 2 Score : 

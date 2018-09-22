@@ -11,14 +11,20 @@ class A3CAgent:
         self.roll_out_steps = 5
         self.this_level = 0
         self.worker_number = 0
-        tf.reset_default_graph()
+        
     
     def init(self, sso, elapsed_timer):
-        if self.first_init :
+        s_size = sso.observation.shape[0] * sso.observation.shape[1] * sso.observation.shape[2] # Observations are greyscale frames of 84 * 84 * 1
+        a_size = len(sso.availableActions) # Agent can move Left, Right, or Fire
+        s_shape = sso.observation.shape
+
+        if self.first_init or not (s_size == self.s_size and a_size == self.a_size and s_shape == self.s_shape)  :
             #STAT OF FIRST INIT
+            tf.reset_default_graph()
             self.first_init = False
             
-            self.roll_out_steps =len(sso.availableActions)*3
+            if(len(sso.availableActions) > 0):
+                self.roll_out_steps =len(sso.availableActions)*3
             self.gamma = .99 # discount rate for advantage estimation and reward discounting
 
             self.prv_observation = None
@@ -48,6 +54,7 @@ class A3CAgent:
 
         #Start new worker for level
         self.worker_number += 1
+        
         print("Worker starting : "+str(self.worker_number))
         self.Worker = Worker(self.worker_number, self.s_size, self.a_size, self.trainer, self.s_shape,self.session)
         

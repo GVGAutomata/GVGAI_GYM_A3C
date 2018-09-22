@@ -75,7 +75,7 @@ class Worker():
                 feed_dict={self.local_AC.inputs:[observation],
                 self.local_AC.state_in[0]:rnn_state[0],
                 self.local_AC.state_in[1]:rnn_state[1]})
-            action = np.random.choice(action_distribution[0],p=action_distribution[0])
+            action = np.random.choice(action_distribution[0],p=action_distribution[0]) #randomly chose action with polociy distribution 
             action = np.argmax(action_distribution == action)
                 
             self.episode_buffer.append([prv_observation, prv_action, reward, observation, game_over, value[0,0]])
@@ -85,13 +85,12 @@ class Worker():
             if do_train:
                 # Since we don't know what the true final return is, we "bootstrap" from our current
                 # value estimation.
-                # v1 = sess.run(self.local_AC.value, 
-                #     feed_dict={self.local_AC.inputs:[s],
+                # v1 = session.run(self.local_AC.value, 
+                #     feed_dict={self.local_AC.inputs:[observation],
                 #     self.local_AC.state_in[0]:rnn_state[0],
                 #     self.local_AC.state_in[1]:rnn_state[1]})[0,0]
                 
-                #v_l,p_l,e_l,g_n,v_n = self.train(self.episode_buffer,sess,gamma,v)
-                v_l,p_l,e_l,g_n,v_n = self.train(self.episode_buffer, session, gamma, 0.0)
+                v_l,p_l,e_l,g_n,v_n = self.train(self.episode_buffer, session, gamma, value)
                 self.episode_buffer = []
                 session.run(self.update_local_ops)
 
@@ -104,6 +103,6 @@ class Worker():
                 # summary.value.add(tag='Losses/Grad Norm', simple_value=float(g_n))
                 # summary.value.add(tag='Losses/Var Norm', simple_value=float(v_n)) 
                 # self.summary_writer.add_summary(summary, self.episode_count)
-                self.summary_writer.flush()                              
+                #self.summary_writer.flush()                              
             
             return action
